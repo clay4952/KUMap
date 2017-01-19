@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "457D04F182DEAA0E82610137E49E092125367FB4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "457D04F182DEAA0E82610137E49E092125367FB4" : 9223372036854775807,
+    "862639E15B83C1D41BE23620A1064C0277BD35E7" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "AF9D0E46-A6A2-4D4C-AFA7-218BE067C27C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "457D04F182DEAA0E82610137E49E092125367FB4" : "naverMapAPI\/",
+    "862639E15B83C1D41BE23620A1064C0277BD35E7" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "sample-map-swift-dev",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "sample-map-swift-dev\/sample-map-swift-dev\/sample-map-swift-dev\/sample-map-swift-dev.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/navermaps\/maps.ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "457D04F182DEAA0E82610137E49E092125367FB4"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ProjectInTheClass\/KUMap.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "862639E15B83C1D41BE23620A1064C0277BD35E7"
+    }
+  ]
+}
