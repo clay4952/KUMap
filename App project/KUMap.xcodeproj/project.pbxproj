@@ -12,7 +12,6 @@
 		146512B71E2F5D83004C05C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 146512B51E2F5D83004C05C8 /* Main.storyboard */; };
 		146512B91E2F5D83004C05C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 146512B81E2F5D83004C05C8 /* Assets.xcassets */; };
 		146512BC1E2F5D83004C05C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 146512BA1E2F5D83004C05C8 /* LaunchScreen.storyboard */; };
-		147416C31E307BB60001BA5D /* CHControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147416B91E307BB60001BA5D /* CHControls.swift */; };
 		147416C41E307BB60001BA5D /* CHModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147416BA1E307BB60001BA5D /* CHModalViewController.swift */; };
 		147416C91E307BB60001BA5D /* NavigationControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147416BF1E307BB60001BA5D /* NavigationControllers.swift */; };
 		147416CB1E307BB60001BA5D /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147416C11E307BB60001BA5D /* UIViewController+Navigation.swift */; };
@@ -27,7 +26,6 @@
 		146512B81E2F5D83004C05C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		146512BB1E2F5D83004C05C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		146512BD1E2F5D83004C05C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		147416B91E307BB60001BA5D /* CHControls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHControls.swift; sourceTree = "<group>"; };
 		147416BA1E307BB60001BA5D /* CHModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHModalViewController.swift; sourceTree = "<group>"; };
 		147416BF1E307BB60001BA5D /* NavigationControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllers.swift; sourceTree = "<group>"; };
 		147416C11E307BB60001BA5D /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
@@ -79,7 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				147416CC1E307DB90001BA5D /* MapViewController.swift */,
-				147416B91E307BB60001BA5D /* CHControls.swift */,
 				147416BA1E307BB60001BA5D /* CHModalViewController.swift */,
 				147416BF1E307BB60001BA5D /* NavigationControllers.swift */,
 				147416C11E307BB60001BA5D /* UIViewController+Navigation.swift */,
@@ -162,7 +159,6 @@
 			files = (
 				147416CB1E307BB60001BA5D /* UIViewController+Navigation.swift in Sources */,
 				146512B41E2F5D83004C05C8 /* ViewController.swift in Sources */,
-				147416C31E307BB60001BA5D /* CHControls.swift in Sources */,
 				146512B21E2F5D83004C05C8 /* AppDelegate.swift in Sources */,
 				147416CD1E307DB90001BA5D /* MapViewController.swift in Sources */,
 				147416C41E307BB60001BA5D /* CHModalViewController.swift in Sources */,

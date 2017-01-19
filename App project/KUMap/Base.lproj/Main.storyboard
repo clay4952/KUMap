@@ -841,7 +841,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="520"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hana00" translatesAutoresizingMaskIntoConstraints="NO" id="LCc-hd-Zxd">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hana12" translatesAutoresizingMaskIntoConstraints="NO" id="LCc-hd-Zxd">
                                                     <rect key="frame" x="8" y="8" width="110" height="110"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -1487,7 +1487,6 @@
         <image name="Droid" width="112" height="112"/>
         <image name="EduHall" width="240" height="240"/>
         <image name="Frame" width="128" height="128"/>
-        <image name="Hana00" width="16" height="16"/>
         <image name="Hana01" width="150" height="99"/>
         <image name="Hana02" width="150" height="166"/>
         <image name="Hana03" width="300" height="119"/>
@@ -1499,6 +1498,7 @@
         <image name="Hana09" width="320" height="320"/>
         <image name="Hana10" width="480" height="319"/>
         <image name="Hana11" width="312" height="212"/>
+        <image name="Hana12" width="300" height="113"/>
         <image name="HanaSquare_Top" width="250" height="137"/>
         <image name="HanaSquare_main" width="540" height="304"/>
         <image name="HanaSquare_small" width="55" height="55"/>
