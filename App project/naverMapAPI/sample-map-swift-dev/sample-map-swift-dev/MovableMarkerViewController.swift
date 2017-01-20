@@ -25,7 +25,7 @@ class MovableMarkerViewController: UIViewController, NMapViewDelegate, NMapPOIda
             mapView.delegate = self
             
             // set the application api key for Open MapViewer Library
-            mapView.setClientId("YOUR CLIENT ID")
+            mapView.setClientId("mg9WXB11pgqIh_BYSSyA")
             
             mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
 

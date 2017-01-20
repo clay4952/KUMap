@@ -497,7 +497,7 @@
 				DEVELOPMENT_TEAM = TQ7M7UJFN9;
 				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../Frameworks\"";
 				INFOPLIST_FILE = "sample-map-swift-dev/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-lxml2",
@@ -517,7 +517,7 @@
 				DEVELOPMENT_TEAM = TQ7M7UJFN9;
 				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../Frameworks\"";
 				INFOPLIST_FILE = "sample-map-swift-dev/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-lxml2",

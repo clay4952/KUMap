@@ -8,36 +8,6 @@
 
 import UIKit
 
-
-open class AlertScene: UIViewController {
-    @IBInspectable open var alertStyle:Bool = false
-    @IBInspectable open var alertTitle:String = ""
-    @IBInspectable open var message:String = ""
-    @IBInspectable open var redButton:String? = nil
-    @IBInspectable open var buttonNames:String = ""
-    
-    var alertController:UIAlertController!
-    open override func viewDidAppear(_ animated: Bool) {
-        let style:UIAlertControllerStyle = (alertStyle ? .alert : .actionSheet)
-        
-        alertController = UIAlertController(title: alertTitle, message: message, preferredStyle: style)
-        
-        if let redActionName = redButton {
-            let redAction = UIAlertAction(title: redActionName, style: .destructive, handler: nil)
-            alertController.addAction(redAction)
-        }
-        
-        let buttonNameArray = buttonNames.components(separatedBy: ",")
-        buttonNameArray.map({
-            let action = UIAlertAction(title: $0, style: .default, handler: nil)
-            alertController.addAction(action)
-        })
-        
-        self.present(alertController, animated: true, completion: nil)
-    }
-    
-}
-
 open class ActivityScene: UIViewController {
     @IBInspectable open var name:String = "AppName"
     @IBInspectable open var activityIcon:String = "LS_Profile"

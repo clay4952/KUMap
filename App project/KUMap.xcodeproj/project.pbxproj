@@ -15,7 +15,10 @@
 		147416C41E307BB60001BA5D /* CHModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147416BA1E307BB60001BA5D /* CHModalViewController.swift */; };
 		147416C91E307BB60001BA5D /* NavigationControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147416BF1E307BB60001BA5D /* NavigationControllers.swift */; };
 		147416CB1E307BB60001BA5D /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147416C11E307BB60001BA5D /* UIViewController+Navigation.swift */; };
-		147416CD1E307DB90001BA5D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147416CC1E307DB90001BA5D /* MapViewController.swift */; };
+		147417101E30BB500001BA5D /* NMapViewerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1474170F1E30BB500001BA5D /* NMapViewerSDK.framework */; };
+		147417171E30CD4E0001BA5D /* NMapViewResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147417161E30CD4E0001BA5D /* NMapViewResources.swift */; };
+		147417211E30CE8E0001BA5D /* CustomMarkersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147417191E30CE8E0001BA5D /* CustomMarkersViewController.swift */; };
+		147417221E30CE8E0001BA5D /* LocationMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1474171A1E30CE8E0001BA5D /* LocationMapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +32,11 @@
 		147416BA1E307BB60001BA5D /* CHModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHModalViewController.swift; sourceTree = "<group>"; };
 		147416BF1E307BB60001BA5D /* NavigationControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllers.swift; sourceTree = "<group>"; };
 		147416C11E307BB60001BA5D /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
-		147416CC1E307DB90001BA5D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		1474170F1E30BB500001BA5D /* NMapViewerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NMapViewerSDK.framework; sourceTree = "<group>"; };
+		147417111E30C2720001BA5D /* KUMap-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KUMap-Bridging-Header.h"; sourceTree = "<group>"; };
+		147417161E30CD4E0001BA5D /* NMapViewResources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NMapViewResources.swift; sourceTree = "<group>"; };
+		147417191E30CE8E0001BA5D /* CustomMarkersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMarkersViewController.swift; sourceTree = "<group>"; };
+		1474171A1E30CE8E0001BA5D /* LocationMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationMapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				147417101E30BB500001BA5D /* NMapViewerSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +57,7 @@
 				147416B71E307BB60001BA5D /* Sources */,
 				146512B01E2F5D83004C05C8 /* KUMap */,
 				146512AF1E2F5D83004C05C8 /* Products */,
+				1474170E1E30BB500001BA5D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,10 +74,12 @@
 			children = (
 				146512B11E2F5D83004C05C8 /* AppDelegate.swift */,
 				146512B31E2F5D83004C05C8 /* ViewController.swift */,
+				147417161E30CD4E0001BA5D /* NMapViewResources.swift */,
 				146512B51E2F5D83004C05C8 /* Main.storyboard */,
 				146512B81E2F5D83004C05C8 /* Assets.xcassets */,
 				146512BA1E2F5D83004C05C8 /* LaunchScreen.storyboard */,
 				146512BD1E2F5D83004C05C8 /* Info.plist */,
+				147417111E30C2720001BA5D /* KUMap-Bridging-Header.h */,
 			);
 			path = KUMap;
 			sourceTree = "<group>";
@@ -76,12 +87,22 @@
 		147416B71E307BB60001BA5D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				147416CC1E307DB90001BA5D /* MapViewController.swift */,
 				147416BA1E307BB60001BA5D /* CHModalViewController.swift */,
 				147416BF1E307BB60001BA5D /* NavigationControllers.swift */,
 				147416C11E307BB60001BA5D /* UIViewController+Navigation.swift */,
+				147417191E30CE8E0001BA5D /* CustomMarkersViewController.swift */,
+				1474171A1E30CE8E0001BA5D /* LocationMapViewController.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		1474170E1E30BB500001BA5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1474170F1E30BB500001BA5D /* NMapViewerSDK.framework */,
+			);
+			name = Frameworks;
+			path = naverMapAPI/Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +139,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 2HE2RUTC93;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -160,8 +186,10 @@
 				147416CB1E307BB60001BA5D /* UIViewController+Navigation.swift in Sources */,
 				146512B41E2F5D83004C05C8 /* ViewController.swift in Sources */,
 				146512B21E2F5D83004C05C8 /* AppDelegate.swift in Sources */,
-				147416CD1E307DB90001BA5D /* MapViewController.swift in Sources */,
+				147417221E30CE8E0001BA5D /* LocationMapViewController.swift in Sources */,
 				147416C41E307BB60001BA5D /* CHModalViewController.swift in Sources */,
+				147417211E30CE8E0001BA5D /* CustomMarkersViewController.swift in Sources */,
+				147417171E30CD4E0001BA5D /* NMapViewResources.swift in Sources */,
 				147416C91E307BB60001BA5D /* NavigationControllers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,10 +314,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2HE2RUTC93;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/naverMapAPI/Frameworks\"";
 				INFOPLIST_FILE = KUMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = /usr/include/libxml2;
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kumap.KUMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_NAME)/KUMap-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -299,10 +335,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2HE2RUTC93;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/naverMapAPI/Frameworks\"";
 				INFOPLIST_FILE = KUMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = /usr/include/libxml2;
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kumap.KUMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_NAME)/KUMap-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
