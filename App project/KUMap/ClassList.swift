@@ -12,6 +12,10 @@ class Newsfeed {
     var news:[Post]?
 }
 
+class List {
+    var listBuilding:[Building]?
+}
+
 class Post {
     let photo:String
     var postBD:Building?
@@ -22,19 +26,28 @@ class Post {
     }
 }
 
-class List {
-    var listBuilding:[Building]?
-}
-
 class Building {
     let bdName:String
-    let bdLocation:(x:Double, y:Double)
+    let defaultPic:String
     var recentPics:Int
+    var bdDetail:BDetail?
     
-    init(bdName:String, bdLocation:(x:Double, y:Double), recentPics:Int) {
+    init(bdName:String, defaultPic:String, recentPics:Int) {
         self.bdName = bdName
-        self.bdLocation = bdLocation
+        self.defaultPic = defaultPic
         self.recentPics = recentPics
+    }
+}
+
+class BDetail {
+    let bdName:String
+    var bdPictures:Array<String>
+    let bdLocation:(x:Double, y:Double)
+    
+    init(bdName:String, bdPictures:Array<String>, bdLocation:(x:Double, y:Double)) {
+        self.bdName = bdName
+        self.bdPictures = bdPictures
+        self.bdLocation = bdLocation
     }
 }
 
