@@ -50,7 +50,7 @@ class ReverseGeocoderViewController: UIViewController, NMapViewDelegate, NMapPOI
 
         mapView?.viewDidAppear()
 
-        requestAddressByCoordination(NGeoPoint(longitude: 126.978371, latitude: 37.5666091))
+        requestAddressByCoordination(NGeoPoint(longitude:127.029690, latitude:37.586365))
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -70,7 +70,7 @@ class ReverseGeocoderViewController: UIViewController, NMapViewDelegate, NMapPOI
     open func onMapView(_ mapView: NMapView!, initHandler error: NMapError!) {
         if (error == nil) { // success
             // set map center and level
-            mapView.setMapCenter(NGeoPoint(longitude:126.978371, latitude:37.5666091), atLevel:11)
+            mapView.setMapCenter(NGeoPoint(longitude:127.029690, latitude:37.586365), atLevel:11)
             // set for retina display
             mapView.setMapEnlarged(true, mapHD: true)
             // set map mode : vector/satelite/hybrid

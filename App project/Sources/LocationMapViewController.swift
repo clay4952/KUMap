@@ -13,6 +13,9 @@ class LocationMapViewController: UIViewController, NMapViewDelegate, NMapPOIdata
     var mapView: NMapView?
     var changeStateButton: UIButton?
     
+    @IBOutlet var calloutView: UIView!
+    @IBOutlet weak var calloutLabel: UILabel!
+    
     enum state {
         case disabled
         case tracking
@@ -102,6 +105,8 @@ class LocationMapViewController: UIViewController, NMapViewDelegate, NMapPOIdata
         super.viewDidAppear(animated)
 
         mapView?.viewDidAppear()
+        
+        showMarkers()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -123,12 +128,18 @@ class LocationMapViewController: UIViewController, NMapViewDelegate, NMapPOIdata
     }
 
     open func onMapOverlay(_ poiDataOverlay: NMapPOIdataOverlay!, calloutOffsetWithType poiFlagType: NMapPOIflagType) -> CGPoint {
-        return CGPoint.zero
-    }
-
+        return CGPoint(x: 0.5, y: 0.0)
+    }       // callout을 위해 수정
+    
     open func onMapOverlay(_ poiDataOverlay: NMapPOIdataOverlay!, imageForCalloutOverlayItem poiItem: NMapPOIitem!, constraintSize: CGSize, selected: Bool, imageForCalloutRightAccessory: UIImage!, calloutPosition: UnsafeMutablePointer<CGPoint>!, calloutHit calloutHitRect: UnsafeMutablePointer<CGRect>!) -> UIImage! {
         return nil
     }
+    /*
+    func onMapOverlay(_ poiDataOverlay: NMapPOIdataOverlay!, viewForCalloutOverlayItem poiItem: NMapPOIitem!, calloutPosition: UnsafeMutablePointer<CGPoint>!) -> UIView! {
+        calloutLabel.text = poiItem.title
+        calloutPosition.pointee.x = round(calloutView.bounds.size.width / 2) + 1
+        return calloutView
+    } */
 
     // MARK: - NMapLocationManagerDelegate Methods
 
@@ -161,7 +172,7 @@ class LocationMapViewController: UIViewController, NMapViewDelegate, NMapPOIdata
         }
 
         if (!message.isEmpty) {
-            let alert = UIAlertController(title:"NMapViewer", message: message, preferredStyle: .alert)
+            let alert = UIAlertController(title:"Alert", message: message, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title:"OK", style:.default, handler: nil))
             present(alert, animated: true, completion: nil)
         }
@@ -320,4 +331,43 @@ class LocationMapViewController: UIViewController, NMapViewDelegate, NMapPOIdata
             changeStateButton?.setImage(#imageLiteral(resourceName: "v4_btn_navi_location_my"), for: .normal)
         }
     }
+    
+    ///////////// 지도 상에 마커 나타내기 (추가한 것)
+    
+    func showMarkers() {
+        
+        if let mapOverlayManager = mapView?.mapOverlayManager {
+            
+            // create POI data overlay
+            if let poiDataOverlay = mapOverlayManager.newPOIdataOverlay() {
+                
+                poiDataOverlay.initPOIdata(3)
+                
+                poiDataOverlay.addPOIitem(atLocation: NGeoPoint(longitude: 127.031259, latitude: 37.586786), title: "우당교양관", type: UserPOIflagTypeDefault, iconIndex: 0, with: nil)
+                
+                poiDataOverlay.addPOIitem(atLocation: NGeoPoint(longitude: 127.031762, latitude: 37.588528), title: "문과대학", type: UserPOIflagTypeDefault, iconIndex: 1, with: nil)
+                
+                poiDataOverlay.addPOIitem(atLocation: NGeoPoint(longitude: 127.026554, latitude: 37.584591), title: "과학도서관", type: UserPOIflagTypeDefault, iconIndex: 2, with: nil)
+                
+                poiDataOverlay.endPOIdata()
+                
+                // show all POI data
+                poiDataOverlay.showAllPOIdata()
+                
+                poiDataOverlay.selectPOIitem(at: 2, moveToCenter: false, focusedBySelectItem: true)
+                
+            }
+        }
+    }
+    
+    // 오러베이 클리어 (추가한 것)
+    
+    func clearOverlays() {
+        if let mapOverlayManager = mapView?.mapOverlayManager {
+            mapOverlayManager.clearOverlays()
+        }
+    }
+    
 }
+
+
