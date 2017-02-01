@@ -72,7 +72,10 @@ class DataCenter {
     
     
     init() {
-        
+        places += self.createDummy()
+    }
+    
+    func createDummy () -> [Place] {
         let aegineung:Place = Place()
         aegineung.name = "애기능"
         aegineung.icon = UIImage(named: "Chipmunk_small")
@@ -80,24 +83,24 @@ class DataCenter {
         aegineung.recentPics = 4
         aegineung.latitude = 37.589620
         aegineung.longitude = 127.032173
-
-        let hanasquare:Place
-        let centralsquare:Place
-        let centrallibrary:Place
-        let unchowoosun:Place
-        let mainhall:Place
-        let businesshall:Place
-        let lgposcohall:Place
-        let hyundaimotorshall:Place
-        let samsunghall:Place
-        let chipmunkroad:Place
+        
+        let hanasquare:Place = Place()
+        hanasquare.name = "하나스퀘어"
+        hanasquare.icon = UIImage(named: "HanaSquare_small")
+        hanasquare.defaultPic = UIImage(named: "HanaSquare_main")
+        hanasquare.recentPics = 12
+        hanasquare.latitude = 37.589620
+        hanasquare.longitude = 127.032173
+        let centralsquare:Place = Place()
+        let centrallibrary:Place = Place()
+        let unchowoosun:Place = Place()
+        let mainhall:Place = Place()
+        let businesshall:Place = Place()
+        let lgposcohall:Place = Place()
+        let hyundaimotorshall:Place = Place()
+        let samsunghall:Place = Place()
+        let chipmunkroad:Place = Place()
         
         
     }
-    
-    
-    
-    
-    func createDummy
-    
 }
