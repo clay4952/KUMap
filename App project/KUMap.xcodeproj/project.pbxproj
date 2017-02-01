@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		141322F51E371C6E00A7FFC2 /* ClassList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141322F41E371C6E00A7FFC2 /* ClassList.swift */; };
 		141322F71E373F6800A7FFC2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141322F61E373F6800A7FFC2 /* CoreGraphics.framework */; };
 		141322F91E373F7100A7FFC2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141322F81E373F7100A7FFC2 /* QuartzCore.framework */; };
 		141322FB1E373F7F00A7FFC2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141322FA1E373F7F00A7FFC2 /* CoreLocation.framework */; };
@@ -24,10 +23,11 @@
 		146512BC1E2F5D83004C05C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 146512BA1E2F5D83004C05C8 /* LaunchScreen.storyboard */; };
 		147417101E30BB500001BA5D /* NMapViewerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1474170F1E30BB500001BA5D /* NMapViewerSDK.framework */; };
 		147417171E30CD4E0001BA5D /* NMapViewResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147417161E30CD4E0001BA5D /* NMapViewResources.swift */; };
+		149C8AC71E41A78000FC3FEF /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149C8AC61E41A78000FC3FEF /* NewsTableViewController.swift */; };
+		149C8ACB1E41AAE800FC3FEF /* DataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149C8ACA1E41AAE800FC3FEF /* DataCenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		141322F41E371C6E00A7FFC2 /* ClassList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassList.swift; sourceTree = "<group>"; };
 		141322F61E373F6800A7FFC2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		141322F81E373F7100A7FFC2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		141322FA1E373F7F00A7FFC2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -47,6 +47,8 @@
 		1474170F1E30BB500001BA5D /* NMapViewerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NMapViewerSDK.framework; sourceTree = "<group>"; };
 		147417111E30C2720001BA5D /* KUMap-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KUMap-Bridging-Header.h"; sourceTree = "<group>"; };
 		147417161E30CD4E0001BA5D /* NMapViewResources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NMapViewResources.swift; sourceTree = "<group>"; };
+		149C8AC61E41A78000FC3FEF /* NewsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
+		149C8ACA1E41AAE800FC3FEF /* DataCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +91,9 @@
 			children = (
 				146512B11E2F5D83004C05C8 /* AppDelegate.swift */,
 				146512B31E2F5D83004C05C8 /* ViewController.swift */,
+				149C8AC61E41A78000FC3FEF /* NewsTableViewController.swift */,
 				147417161E30CD4E0001BA5D /* NMapViewResources.swift */,
-				141322F41E371C6E00A7FFC2 /* ClassList.swift */,
+				149C8ACA1E41AAE800FC3FEF /* DataCenter.swift */,
 				146512B51E2F5D83004C05C8 /* Main.storyboard */,
 				146512B81E2F5D83004C05C8 /* Assets.xcassets */,
 				146512BA1E2F5D83004C05C8 /* LaunchScreen.storyboard */,
@@ -203,14 +206,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				149C8ACB1E41AAE800FC3FEF /* DataCenter.swift in Sources */,
 				146512B41E2F5D83004C05C8 /* ViewController.swift in Sources */,
 				146512B21E2F5D83004C05C8 /* AppDelegate.swift in Sources */,
-				141322F51E371C6E00A7FFC2 /* ClassList.swift in Sources */,
 				1440EB1B1E3864E300CFB078 /* LocationMapViewController.swift in Sources */,
 				1440EB1C1E3864E300CFB078 /* NavigationControllers.swift in Sources */,
 				1440EB1E1E3864E300CFB078 /* UIViewController+Navigation.swift in Sources */,
 				147417171E30CD4E0001BA5D /* NMapViewResources.swift in Sources */,
 				1440EB191E3864E300CFB078 /* CHModalViewController.swift in Sources */,
+				149C8AC71E41A78000FC3FEF /* NewsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
