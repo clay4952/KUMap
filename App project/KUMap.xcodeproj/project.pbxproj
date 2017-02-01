@@ -12,12 +12,14 @@
 		141322FB1E373F7F00A7FFC2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141322FA1E373F7F00A7FFC2 /* CoreLocation.framework */; };
 		141322FD1E373FA000A7FFC2 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 141322FC1E373FA000A7FFC2 /* libsqlite3.0.tbd */; };
 		141322FF1E373FAA00A7FFC2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141322FE1E373FAA00A7FFC2 /* SystemConfiguration.framework */; };
+		1425C4601E41F05400FC80C0 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1425C45F1E41F05400FC80C0 /* NewsTableViewCell.swift */; };
+		1425C4621E42063200FC80C0 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1425C4611E42063200FC80C0 /* ListTableViewController.swift */; };
+		1425C4641E42064400FC80C0 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1425C4631E42064400FC80C0 /* ListTableViewCell.swift */; };
 		1440EB191E3864E300CFB078 /* CHModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1440EB131E3864E300CFB078 /* CHModalViewController.swift */; };
 		1440EB1B1E3864E300CFB078 /* LocationMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1440EB151E3864E300CFB078 /* LocationMapViewController.swift */; };
 		1440EB1C1E3864E300CFB078 /* NavigationControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1440EB161E3864E300CFB078 /* NavigationControllers.swift */; };
 		1440EB1E1E3864E300CFB078 /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1440EB181E3864E300CFB078 /* UIViewController+Navigation.swift */; };
 		146512B21E2F5D83004C05C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146512B11E2F5D83004C05C8 /* AppDelegate.swift */; };
-		146512B41E2F5D83004C05C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146512B31E2F5D83004C05C8 /* ViewController.swift */; };
 		146512B71E2F5D83004C05C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 146512B51E2F5D83004C05C8 /* Main.storyboard */; };
 		146512B91E2F5D83004C05C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 146512B81E2F5D83004C05C8 /* Assets.xcassets */; };
 		146512BC1E2F5D83004C05C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 146512BA1E2F5D83004C05C8 /* LaunchScreen.storyboard */; };
@@ -33,13 +35,15 @@
 		141322FA1E373F7F00A7FFC2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		141322FC1E373FA000A7FFC2 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		141322FE1E373FAA00A7FFC2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1425C45F1E41F05400FC80C0 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		1425C4611E42063200FC80C0 /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		1425C4631E42064400FC80C0 /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		1440EB131E3864E300CFB078 /* CHModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHModalViewController.swift; sourceTree = "<group>"; };
 		1440EB151E3864E300CFB078 /* LocationMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationMapViewController.swift; sourceTree = "<group>"; };
 		1440EB161E3864E300CFB078 /* NavigationControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllers.swift; sourceTree = "<group>"; };
 		1440EB181E3864E300CFB078 /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
 		146512AE1E2F5D83004C05C8 /* KUMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KUMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		146512B11E2F5D83004C05C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		146512B31E2F5D83004C05C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		146512B61E2F5D83004C05C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		146512B81E2F5D83004C05C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		146512BB1E2F5D83004C05C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -90,8 +94,10 @@
 			isa = PBXGroup;
 			children = (
 				146512B11E2F5D83004C05C8 /* AppDelegate.swift */,
-				146512B31E2F5D83004C05C8 /* ViewController.swift */,
 				149C8AC61E41A78000FC3FEF /* NewsTableViewController.swift */,
+				1425C45F1E41F05400FC80C0 /* NewsTableViewCell.swift */,
+				1425C4611E42063200FC80C0 /* ListTableViewController.swift */,
+				1425C4631E42064400FC80C0 /* ListTableViewCell.swift */,
 				147417161E30CD4E0001BA5D /* NMapViewResources.swift */,
 				149C8ACA1E41AAE800FC3FEF /* DataCenter.swift */,
 				146512B51E2F5D83004C05C8 /* Main.storyboard */,
@@ -206,9 +212,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1425C4641E42064400FC80C0 /* ListTableViewCell.swift in Sources */,
 				149C8ACB1E41AAE800FC3FEF /* DataCenter.swift in Sources */,
-				146512B41E2F5D83004C05C8 /* ViewController.swift in Sources */,
+				1425C4601E41F05400FC80C0 /* NewsTableViewCell.swift in Sources */,
 				146512B21E2F5D83004C05C8 /* AppDelegate.swift in Sources */,
+				1425C4621E42063200FC80C0 /* ListTableViewController.swift in Sources */,
 				1440EB1B1E3864E300CFB078 /* LocationMapViewController.swift in Sources */,
 				1440EB1C1E3864E300CFB078 /* NavigationControllers.swift in Sources */,
 				1440EB1E1E3864E300CFB078 /* UIViewController+Navigation.swift in Sources */,

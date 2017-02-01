@@ -18,12 +18,12 @@ class List {
 }
 
 class Post {
-    let photo:UIImage
-    var place:Place?
+    var photo:UIImage?
+    var place:String
     var tags:Array<String> = []
     
-    init(photo:UIImage) {
-        self.photo = photo
+    init() {
+        self.place = ""
     }
 }
 
@@ -39,15 +39,6 @@ class Place {
     init() {
         self.name = ""
         self.recentPics = 0
-        self.latitude = 0.0
-        self.longitude = 0.0
-    }
-    
-    init(name:String, icon:UIImage, defaultPic:UIImage, recentPics:Int) {
-        self.name = name
-        self.icon = icon
-        self.defaultPic = defaultPic
-        self.recentPics = recentPics
         self.latitude = 0.0
         self.longitude = 0.0
     }
@@ -68,17 +59,18 @@ let dataCenter:DataCenter = DataCenter()
 class DataCenter {
     
     var places:[Place] = []
-    
+    var posts:[Post] = []
     
     
     init() {
-        places += self.createDummy()
+        places += self.placeDummy()
+        posts += self.postDummy()
     }
     
-    func createDummy () -> [Place] {
+    func placeDummy () -> [Place] {
         let aegineung:Place = Place()
         aegineung.name = "애기능"
-        aegineung.icon = UIImage(named: "Chipmunk_small")
+        aegineung.icon = UIImage(named: "Aegineung_small")
         aegineung.defaultPic = UIImage(named: "Chipmunk_main")
         aegineung.recentPics = 4
         aegineung.latitude = 37.584074
@@ -94,7 +86,7 @@ class DataCenter {
         
         let centralsquare:Place = Place()
         centralsquare.name = "중앙광장"
-        centralsquare.icon = UIImage(named: "HanaSquare_small")
+        centralsquare.icon = UIImage(named: "CenSquare_small")
         centralsquare.defaultPic = UIImage(named: "CenFountain")
         centralsquare.recentPics = 10
         centralsquare.latitude = 37.5888253
@@ -102,7 +94,7 @@ class DataCenter {
         
         let centrallibrary:Place = Place()
         centrallibrary.name = "중앙도서관"
-        centrallibrary.icon = UIImage(named: "HanaSquare_small")
+        centrallibrary.icon = UIImage(named: "CenLib_small")
         centrallibrary.defaultPic = UIImage(named: "CenLib")
         centrallibrary.recentPics = 15
         centrallibrary.latitude = 37.5908274
@@ -110,7 +102,7 @@ class DataCenter {
         
         let unchowoosun:Place = Place()
         unchowoosun.name = "운초우선교육관"
-        unchowoosun.icon = UIImage(named: "HanaSquare_small")
+        unchowoosun.icon = UIImage(named: "EduHall_small")
         unchowoosun.defaultPic = UIImage(named: "EduHall")
         unchowoosun.recentPics = 3
         unchowoosun.latitude = 37.591595
@@ -172,5 +164,25 @@ class DataCenter {
         chipmunkroad.latitude = 37.589610
         chipmunkroad.longitude = 127.032127
         
+        return [aegineung, hanasquare, centralsquare, centrallibrary, unchowoosun, mainhall, businesshall, lgposcohall, hyundaimotorshall, samsunghall, seogwan, chipmunkroad]
+    }
+    
+    func postDummy () -> [Post] {
+        let post1:Post = Post()
+        post1.photo = UIImage(named: "Aegineung")
+        post1.place = "애기능"
+        post1.tags = ["날씨좋은","봄날","이공계","애기능","벚꽃","나들이"]
+        
+        let post2:Post = Post()
+        post2.photo = UIImage(named: "CenLib")
+        post2.place = "중앙도서관"
+        post2.tags = ["시험기간","공부하는","학생들","수고해","도서관","로비"]
+        
+        let post3:Post = Post()
+        post3.photo = UIImage(named: "EduHall")
+        post3.place = "운초우선교육관"
+        post3.tags = ["해질녘","노을","경치좋은","사범대"]
+        
+        return [post1, post2, post3]
     }
 }

@@ -1,5 +1,5 @@
 //
-//  NewsTableViewController.swift
+//  ListTableViewController.swift
 //  KUMap
 //
 //  Created by cscoi028 on 2017. 2. 1..
@@ -8,10 +8,10 @@
 
 import UIKit
 
-class NewsTableViewController: UITableViewController {
-    
-    var news:[Post] = DataCenter.init().posts
+class ListTableViewController: UITableViewController {
 
+    var places:[Place] = DataCenter.init().places
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,20 +36,20 @@ class NewsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        let rowCount = news.count
+        let rowCount = places.count
         return rowCount
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "NewsCell", for: indexPath) as! NewsTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ListCell", for: indexPath) as! ListTableViewCell
         
-        let post = news[indexPath.row]
-        cell.placeLabel?.text = post.place
-        cell.newsImageView.image = post.photo
-        cell.tagLabel?.text = post.place
+        let place = places[indexPath.row]
+        cell.placeLabel?.text = place.name
+        cell.listImageView.image = place.icon
+        cell.recentPics?.text = "최근사진 \(place.recentPics)개"
 
-        self.tableView.rowHeight = 220
+        self.tableView.rowHeight = 128
         // Configure the cell...
 
         return cell
